@@ -43,7 +43,7 @@ body {
     text-decoration: none;
     padding-right: 14%;
     font-size: 121%;
-    color: #eae8e8;
+    color: grey;
 }
 .navigation a:hover{
     font-size: 20px;
@@ -578,4 +578,10 @@ body {
     font-weight: bold;
     margin: auto;
     padding: 3% 30%;
+}
+
+.links a:hover{
+    cursor: pointer;
+    color: grey;
+    font-weight: bold;
 }
