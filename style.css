@@ -5,7 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Cardo", serif;
-}   
+}
+
 body {
     color: #1d1d1d;
     background-color: rgba(234, 232, 232, 255);
@@ -45,11 +46,13 @@ body {
     font-size: 121%;
     color: grey;
 }
-.navigation a:hover{
+
+.navigation a:hover {
     font-size: 20px;
     font-weight: bold;
     color: black;
 }
+
 .contact {
     width: 19%;
 }
@@ -213,7 +216,7 @@ body {
 }
 
 #airplaneTextPara {
-    text-align:center;
+    text-align: center;
     margin-top: 8%;
     font-size: 21px;
     font-weight: 1000;
@@ -233,13 +236,15 @@ body {
 
 .twoImageContainer {
     display: flex;
-    margin: 5% auto;
-    width: 88%;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
 }
 
 .leftImageContainer {
-    width: 40%;
-    height: 38rem;
+    width: 66%;
+    height: 24rem;
+    margin: auto;
 }
 
 .leftImageContainer img:first-child {
@@ -248,8 +253,8 @@ body {
 }
 
 .right {
-    width: 58%;
-    margin-left: 7%;
+    width: 68%;
+    margin: auto;
 }
 
 .rightText {
@@ -399,8 +404,8 @@ body {
     margin-top: 2%;
     background-image: url(./images/scribble_dark_2.png), url(./images/scribble_dark_3.png);
     background-repeat: no-repeat;
-    background-position: left top 29px, right bottom 67px;
-    background-size: 21rem 9rem, 19rem;
+    background-position: left top 74px, right bottom 67px;
+    background-size: 5rem 6rem, 14rem;
 }
 
 .FeedbackHeading {
@@ -417,7 +422,9 @@ body {
     display: flex;
     justify-content: space-evenly;
 }
-#leftArrowButton, #rightArrowButton{
+
+#leftArrowButton,
+#rightArrowButton {
     height: 51px;
     width: 65px;
     position: relative;
@@ -425,13 +432,17 @@ body {
     border: 2px solid black;
     border-radius: 12px;
 }
-#leftArrowButton{
+
+#leftArrowButton {
     left: 40px;
 }
-#leftArrowButton i , #rightArrowButton i{
+
+#leftArrowButton i,
+#rightArrowButton i {
     font-size: 24px;
 }
-#rightArrowButton{
+
+#rightArrowButton {
     right: 40px;
 }
 
@@ -483,19 +494,22 @@ body {
     display: flex;
     flex-direction: column;
 }
-.beUpdatedImage{
+
+.beUpdatedImage {
     margin-left: 6%;
     width: 56.5%;
 }
-.beUpdatedImage img{
+
+.beUpdatedImage img {
     width: 100%;
 }
-.beUpdatedForm h1{
+
+.beUpdatedForm h1 {
     font-size: 68px;
     margin-bottom: 9%;
 }
 
-.beUpdated input{
+.beUpdated input {
     width: 100%;
     border: 2px solid black;
     padding: 4%;
@@ -505,7 +519,8 @@ body {
     background-color: transparent;
     font-size: 20px;
 }
-.beUpdated textarea{
+
+.beUpdated textarea {
     width: 100%;
     border: 2px solid black;
     border-radius: 9px;
@@ -515,7 +530,7 @@ body {
     margin-top: 2%;
 }
 
-#submitButton{
+#submitButton {
     background-color: black;
     border: none;
     color: white;
@@ -526,14 +541,15 @@ body {
     margin-top: 13%;
 }
 
-.footer{
-    background-color: rgba(197,197,197,255);
+.footer {
+    background-color: rgba(197, 197, 197, 255);
     background-image: url(./images/scribble_dark.png);
     background-repeat: no-repeat;
     background-position: left bottom 33px;
     background-size: 286px;
 }
-.innerFooter{
+
+.innerFooter {
     padding-top: 6%;
     display: flex;
     justify-content: space-between;
@@ -541,7 +557,8 @@ body {
     margin: auto;
     font-weight: bold;
 }
-.leftFooter{
+
+.leftFooter {
     width: 32%;
     font-size: 28px;
     line-height: 52px;
@@ -549,40 +566,424 @@ body {
     padding-top: 2%;
 }
 
-.rightFooter{
+.rightFooter {
     width: 68%;
 }
-.footerHeading{
+
+.footerHeading {
     width: 100%;
     margin: 3% 0%;
     padding-left: 2%;
 }
-.footerLinks{
+
+.footerLinks {
     font-size: 17px;
     width: 100%;
     display: flex;
 }
-.links{
+
+.links {
     padding: 2%;
     width: 25%;
     display: flex;
     flex-direction: column;
 }
-.links a{
+
+.links a {
     text-decoration: none;
     color: black;
     padding: 2%;
 }
 
-.copyrightInfo{
+.copyrightInfo {
     width: 88%;
     font-weight: bold;
     margin: auto;
     padding: 3% 30%;
 }
 
-.links a:hover{
+.links a:hover {
     cursor: pointer;
     color: grey;
     font-weight: bold;
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+    .home {
+        padding: 0;
+    }
+
+    .heading {
+        width: 100%;
+    }
+
+    .navigation {
+        width: 80%;
+        background-color: black;
+    }
+
+    .navigation a {
+        padding-right: 7%;
+    }
+
+    .contact {
+        width: 19%;
+    }
+
+    .contact button {
+        padding: 5% 16%;
+        background-color: transparent;
+        font-weight: 700;
+        width: 100%;
+        font-size: 12px;
+        border: 4px solid black;
+    }
+
+    .contents {
+        flex-direction: column;
+        margin-top: 4%;
+        padding: 2% 0%;
+    }
+
+    .contentsText {
+        width: 100%;
+        padding: 1%;
+    }
+
+    .contentsText h3 {
+        font-size: 74px;
+        line-height: 76px;
+        margin-bottom: 2%;
+    }
+
+    .contentsText p {
+        color: #6a6969;
+        font-size: 15px;
+
+    }
+
+    #reverseTicket {
+        margin-top: 6%;
+        background-color: black;
+        color: white;
+        padding: 2%;
+        width: 50%;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .homeImage {
+        width: 100%;
+    }
+
+    .travelLogs {
+        background-image: none;
+        justify-content: space-evenly;
+    }
+
+    .travelLogContent {
+        margin: auto;
+        width: 100%;
+        padding: 3%;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .travelInnerContainer {
+        flex-direction: column;
+
+    }
+
+    .leftImage,
+    .middleImage,
+    .rightImage {
+        width: 100%;
+        margin-top: 4%;
+        font-weight: bold;
+    }
+
+    .travelContent h1 {
+        text-align: center;
+    }
+
+    .underline {
+        align-items: center;
+        margin: auto;
+    }
+
+
+    .airplaneContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(./images/scribble_dark_4.png), url(./images/scribble_lightest.png);
+        background-position: 27px 937px, right top 200px;
+        background-repeat: no-repeat;
+        background-size: 111px 70px, 200px;
+    }
+
+    .airplaneText {
+        text-align: center;
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .twoImageContainer {
+        display: flex;
+        width: 90%;
+        margin: auto;
+    }
+
+
+    .leftImageContainer img:first-child {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .rightText {
+        font-weight: bold;
+        margin-top: 6%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .rightTextHeading {
+        width: 40%;
+        padding: 2%;
+        font-size: 12px;
+        font-weight: 200;
+        text-decoration: underline;
+    }
+
+    .rightTextPara {
+        width: 58%;
+        font-size: 10px;
+        padding: 2% 0%;
+
+    }
+
+    .rightArrow {
+        float: right;
+    }
+
+    #tape {
+        position: relative;
+        z-index: 1;
+        height: 12rem;
+        bottom: 78%;
+        transform: translateX(-35px);
+    }
+
+    .topImage img {
+        width: 100%;
+    }
+
+    .explore {
+        background-color: black;
+        color: white;
+        background-image: url(./images/scribble_light.png);
+        background-repeat: no-repeat;
+        background-position: left bottom -10px;
+        background-size: 32%;
+    }
+
+    .exploreInnerContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 94%;
+        margin-left: 6%;
+        padding: 10% 0%;
+    }
+
+    .exploreImage {
+        margin-top: 2%;
+        width: 100%;
+        height: 22rem;
+    }
+
+    .exploreImage img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .exploreText {
+        width: 100%;
+    }
+
+    .exploreTextHead {
+        padding-bottom: 8%;
+        font-size: 21px;
+    }
+
+    .exploreTextPara {
+        margin-top: 3%;
+        padding: 2%;
+        font-size: 11px;
+    }
+
+    .addPost {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 88%;
+        margin: auto;
+    }
+
+    .addPostLeft {
+        width: 100%;
+    }
+
+    .addPostRight {
+        width: 100%;
+    }
+
+    .addPostHeading {
+        line-height: 58px;
+        padding: 8% 0%;
+        font-size: 30px;
+        font-weight: bold;
+        width: 100%;
+    }
+
+    .addText {
+        font-size: 13px;
+        padding: 2% 0%;
+    }
+
+    .addIcon {
+        width: 14%;
+    }
+
+    .addIcon i {
+        font-size: 21px;
+        padding: 20%;
+    }
+
+    .addPostRight {
+        width: 100%;
+        margin: 8% 0%;
+    }
+
+    .addPostRight img {
+        width: 100%;
+        height: 28rem;
+    }
+
+    .addPostTableContent {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .FeedbackHeading {
+        text-align: center;
+        font-size: 24px;
+        width: 100%;
+        margin: auto;
+        font-weight: bold;
+    }
+
+    .feedbackCard {
+        width: 100%;
+        margin: 8% auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leftCard,
+    .rightCard,
+    .middleCard {
+        width: 50%;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 2%;
+        margin-bottom: 1%;
+        font-weight: bold;
+    }
+
+    #leftArrowButton,
+    #rightArrowButton {
+        height: 0rem;
+        width: 0rem;
+    }
+
+    #leftArrowButton i,
+    #rightArrowButton i {
+        display: none;
+    }
+
+    .beUpdated {
+        width: 100%;
+        margin: auto;
+        padding: 10% 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .beUpdatedForm {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #submitButton {
+        width: 80%;
+        margin: 4% auto;
+    }
+
+    .beUpdatedImage {
+        margin: auto;
+        width: 100%
+    }
+
+    .footer {
+        background-image: none;
+    }
+
+    .innerFooter {
+        padding-top: 6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        margin: auto;
+        font-weight: bold;
+    }
+
+    .leftFooter {
+        width: 84%;
+        font-size: 20px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .rightFooter {
+        width: 90%;
+        margin: auto;
+    }
+
+    .footerHeading {
+        display: none;
+    }
+
+    .footerLinks {
+        font-size: 10px;
+        width: 100%;
+        display: flex;
+    }
+
+    .copyrightInfo {
+        width: 100%;
+        font-weight: bold;
+        margin: auto;
+        padding: 3% 14%;
+    }
+
 }
