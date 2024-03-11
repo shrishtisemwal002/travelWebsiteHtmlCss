@@ -515,7 +515,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.exploreHeading, .beUpdatedFormResponsive, .beUpdatedHeading{
+.exploreHeading, .beUpdatedFormResponsive, .beUpdatedHeading, .addPostHeadingResponsive{
     display: none;
 }
 .beUpdatedForm {
@@ -663,7 +663,7 @@ body {
     .headingText{
         display: block;
         width: 100%;
-        font-size: 38px;
+        font-size: 36px;
         text-align: center;
         padding: 4% 0%;
     }
@@ -886,7 +886,7 @@ body {
     .exploreImage {
         margin-top: 2%;
         width: 92%;
-        margin:auto;
+        margin:auto 2%;
         height: 22rem;
     }
 
@@ -903,8 +903,9 @@ body {
         display: none;
     }
     .exploreHeading{
+        display: block;
         padding-bottom: 8%;
-        font-size: 21px;
+        font-size: 19px;
     }
 
     .exploreTextPara {
@@ -930,13 +931,17 @@ body {
     }
 
     .addPostHeading {
+        display: none;
+    }
+
+    .addPostHeadingResponsive{
+        display: block;
         line-height: 58px;
         padding: 8% 0%;
         font-size: 30px;
         font-weight: bold;
         width: 100%;
     }
-
     .addText {
         font-size: 13px;
         padding: 2% 0%;
@@ -1029,6 +1034,7 @@ body {
     }
     .beUpdatedHeading{
         margin: auto;
+        display: block;
         font-size: 24px;
         -webkit-text-stroke: 1px;
         padding-bottom: 4%;
@@ -1085,7 +1091,7 @@ body {
         font-weight: bold;
         margin: auto;
         padding: 3% 22%;
-        font-size: 12px;
+        font-size: 11px;
     }
 
 }
