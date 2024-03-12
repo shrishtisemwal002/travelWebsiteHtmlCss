@@ -21,7 +21,7 @@
         <div class="home">
             <div class="heading">
                 <!-- navigation bar -->
-                <input type="checkbox" class="toggle_menu" />
+                <input type="checkbox" class="toggle_menu" id="menu_checkbox" />
                 <div class="toggle"></div>
                 <div class="navigation">
                     <a href="#">Home</a>
@@ -353,6 +353,15 @@
             </div>
 
     </div>
+
+    <script>
+        var checkbox = document.getElementById("menu_checkbox");
+
+        window.onscroll = function(){
+            checkbox.checked=false;
+        };
+    </script>
+    
 </body>
 
 </html>
