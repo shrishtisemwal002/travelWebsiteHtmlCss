@@ -6,9 +6,9 @@
     box-sizing: border-box;
     font-family: "Cardo", serif;
 }
-/* div{
-    border: 1px solid red;
-} */
+button:hover{
+    cursor: pointer;
+}
 
 body {
     color: #1d1d1d;
@@ -299,7 +299,7 @@ body {
 
 .rightArrow {
     float: right;
-    width: 37%;
+    width: 35%;
 }
 
 .rightArrow img{
@@ -417,7 +417,7 @@ body {
 .addPostTable {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    margin-top: 1%;
+    margin-top: 2%;
 }
 
 .addPostTableContent {
@@ -1022,6 +1022,9 @@ body {
         flex-direction: column-reverse;
         justify-content: space-between;
     }
+    .beUpdated img{
+        display: none;
+    }
 
     .beUpdatedForm {
         display: none;
@@ -1090,7 +1093,7 @@ body {
         width: 100%;
         font-weight: bold;
         margin: auto;
-        padding: 3% 22%;
+        padding: 4% 22%;
         font-size: 11px;
     }
 
