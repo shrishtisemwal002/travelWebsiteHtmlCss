@@ -643,9 +643,6 @@ body {
     color: black;
     -webkit-text-stroke: 1px;
 }
-div{
-    border: 2px solid red;
-}
 
 /* Responsive */
 @media (min-width: 320px) and (max-width: 767px) {
