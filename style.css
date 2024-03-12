@@ -9,9 +9,6 @@
 button:hover{
     cursor: pointer;
 }
-div{
-    border: 2px solid red;
-}
 
 body {
     color: #1d1d1d;
