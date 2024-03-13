@@ -274,7 +274,7 @@ body {
 
 .leftImageContainer {
     width: 47%;
-    height: 43rem;
+    height: 40rem;
 }
 
 .leftImageContainer img:first-child {
@@ -370,7 +370,7 @@ body {
 }
 
 .exploreTextPara {
-    margin-top: 4%;
+    margin-top: 5%;
     padding: 2%;
     font-size: 13px;
     text-wrap: balance;
@@ -472,7 +472,7 @@ body {
 }
 
 #leftArrowButton {
-    left: 40px;
+    left: 55px;
 }
 
 #leftArrowButton i,
@@ -1009,7 +1009,7 @@ body {
     .addPostHeadingResponsive{
         display: block;
         line-height: 44px;
-        padding: 8% 0%;
+        padding: 8% 0% 6%;
         font-size: 21px;
         font-weight: bold;
         width: 100%;
@@ -1036,7 +1036,7 @@ body {
 
     .addPostRight img {
         width: 100%;
-        height: 28rem;
+        height: 24rem;
     }
 
     .addPostTableContent {
@@ -1167,7 +1167,7 @@ body {
         font-weight: bold;
         margin: auto;
         padding: 4% 22%;
-        font-size: 11px;
+        font-size: 10px;
     }
 
 }
