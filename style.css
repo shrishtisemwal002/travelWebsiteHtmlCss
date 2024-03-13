@@ -323,6 +323,7 @@ body {
 
 .innerParagraph p {
     padding-bottom: 5%;
+    text-align: justify;
 }
 
 #tape {
@@ -373,6 +374,7 @@ body {
     padding: 2%;
     font-size: 13px;
     text-wrap: balance;
+    text-align: justify;
 }
 .exploreTextPara p{
     margin-top: 2%;
@@ -763,6 +765,7 @@ body {
     .contentsText p {
         color: #6a6969;
         font-size: 15px;
+        text-align: justify;
 
     }
 
@@ -1005,15 +1008,16 @@ body {
 
     .addPostHeadingResponsive{
         display: block;
-        line-height: 58px;
+        line-height: 44px;
         padding: 8% 0%;
-        font-size: 25px;
+        font-size: 21px;
         font-weight: bold;
         width: 100%;
     }
     .addText {
         font-size: 13px;
         padding: 2% 0%;
+        text-align: justify;
     }
 
     .addIcon {
